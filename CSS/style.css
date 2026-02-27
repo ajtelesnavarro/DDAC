@@ -1,0 +1,240 @@
+body {
+  background:
+    rgb(16, 53, 92);
+  margin: 0;
+}
+
+.background-image {
+  height: 85vh;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(8, 16, 52)),
+    url("../IMAGENS/homepage/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: 0;
+  /*cria camada */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.background-gradient {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(8, 16, 52), rgb(16, 53, 92));
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  /*para conseguirmos mudar a psoição dos itens dentro da header*/
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.menu-principal {
+  list-style: none;
+  /*remove as bolinhas*/
+  display: flex;
+  /*distribui os elementos dentro dela na horizontal*/
+  gap: 30px;
+  /*espaço entre os elementos*/
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-login {
+  background-color: #01497c;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.menu-direita {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.frase-homepage,
+.frase-homepage h1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+
+.text-menu,
+.text-menu p {
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+
+.text-principaisclientes {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.conteudo-gradient,
+.conteudo-gradient h2 {
+  color: white;
+  padding-top: 30px;
+  padding-right: 40vh;
+  padding-left: 20vh;
+  font-size: 30px;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.principais-clientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.imagens-principaisclientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.sobreempresa-gradient {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 100px;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+
+.sobreempresa-gradient img {
+  width: 600px;
+  border-radius: 15px;
+}
+
+.text-sobreempresa {
+  padding: 40px;
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.container-metodologia input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.dropdown {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown p {
+  font-family: "Space Mono", monospace;
+}
+
+input[type="checkbox"]:checked~.dropdown {
+  max-height: 500px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+}
+
+.text-metodologiadropdown {
+  color: white;
+  font-weight: lighter;
+}
+
+.text-metodologia {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.metodologia-gradient {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 100px 0;
+  padding: 30px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.dropdown-metodologia {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-size: 30px;
+}
+
+.metodologia-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+}
+
+.container-metodologia {
+  width: 50%;
+}
+
+.image-metodologia {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
