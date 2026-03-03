@@ -251,9 +251,75 @@ footer {
   color: white;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   display: flex;
-  gap: 18px;
+  gap: 20px;
 }
 
 .text-hq p {
-  font-size: 23px;
+  font-size: 18px;
+}
+
+.text-hq h1 {
+  font-size: 25px;
+}
+
+.cadastrar {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(to bottom, rgb(8, 16, 52), rgb(16, 53, 92));
+  padding-top: 15vh;
+}
+
+.cadastro-cabecalho {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.cadastro-cabecalho h1 {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.container-cadastro-bloco p {
+  font-family: "Space Mono", monospace;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.container-cadastro-enviar button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #012A4A;
+  border-radius: 15px;
+  background-color: #012A4A;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-cadastro-enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-cadastro-bloco input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: rgba(42, 111, 151, 0.4);
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  outline: none;
+}
+
+.container-cadastro-bloco input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
