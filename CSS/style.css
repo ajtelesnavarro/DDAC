@@ -238,3 +238,22 @@ label {
   display: flex;
   justify-content: center;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgba(137, 194, 217, 0.4);
+}
+
+.text-hq {
+  color: white;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  display: flex;
+  gap: 18px;
+}
+
+.text-hq p {
+  font-size: 23px;
+}
