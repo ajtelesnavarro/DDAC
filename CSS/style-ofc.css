@@ -102,6 +102,7 @@ h2 {
 h3 {
   margin: 0;
   font-size: 1.5em;
+  font-weight: lighter;
 }
 
 .conteudo-gradient,
@@ -152,7 +153,7 @@ h3 {
 .text-sobreempresa {
   padding: 40px;
   font-family: "Space Mono", monospace;
-  font-weight: 300;
+  font-weight: lighter;
   font-size: 19px;
 }
 
@@ -185,6 +186,7 @@ input[type="checkbox"]:checked~.dropdown {
 label {
   color: white;
   font-weight: bold;
+  font-size: 35px;
 }
 
 .text-metodologiadropdown {
@@ -220,7 +222,7 @@ label {
   flex-direction: column;
   gap: 10px;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .metodologia-conteudo {
@@ -276,6 +278,7 @@ footer {
 
 .cadastro-cabecalho {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
+  text-align: center;
 }
 
 .cadastro-cabecalho h1 {
@@ -320,6 +323,8 @@ footer {
   font-size: 18px;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   outline: none;
+  color: white;
+  caret-color: white;
 }
 
 .container-cadastro-bloco input::placeholder {
@@ -337,7 +342,7 @@ footer {
 .about__wrap {
   width: min(1440px, 92vw);
   margin: 0 auto;
-  padding: 56px 72px 64px;
+  padding: 56px 20px 56px;
 }
 
 .about__hero {
@@ -351,7 +356,7 @@ footer {
 .about__headline {
   margin: 0 0 16px;
   line-height: 1.05;
-  font-size: 56px;
+  font-size: 80px;
   font-weight: 800;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   color: white;
@@ -369,7 +374,7 @@ footer {
 .about__sub {
   margin: 0;
   max-width: 520px;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.65;
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -408,10 +413,10 @@ footer {
 }
 
 .about__historyText {
-  max-width: 980px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.85;
   font-family: "Space Mono", monospace;
   color: rgba(255, 255, 255, 0.88);
@@ -436,7 +441,7 @@ footer {
 
 .stat__num {
   display: block;
-  font-size: 54px;
+  font-size: 84px;
   font-weight: 800;
   letter-spacing: -0.02em;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
@@ -446,7 +451,7 @@ footer {
 .stat__label {
   display: block;
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Space Mono", monospace;
   color: rgba(255, 255, 255, 0.75);
 }
