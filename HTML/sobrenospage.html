@@ -1,55 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <title>ABOUTPAGE - DDAC</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sobre Nós | DDAC</title>
+
+  <!-- MESMAS FONTES DA HOMEPAGE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- MESMO CSS DA HOMEPAGE -->
+  <link rel="stylesheet" href="../CSS/style-ofc.css" />
 </head>
 
 <body>
-    <section class="background-image">
-        <header>
-            <div class="container-logo">
-                <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
+
+  <!-- HEADER (IGUAL AO DA HOMEPAGE) -->
+  <header>
+    <div class="container-logo">
+      <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
+    </div>
+
+    <div class="menu-direita">
+      <nav>
+        <ul class="menu-principal">
+          <li>
+            <div class="item-menu-principal">
+              <a href="sobre.html">
+                <div class="text-menu">
+                  <p>Sobre Nós</p>
+                </div>
+              </a>
             </div>
-            <div class="menu-direita">
-                <nav>
-                    <ul class="menu-principal">
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Sobre Nós</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Serviços</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Contato</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#">
-                    <div class="menu-login text-menu">
-                        Login
-                    </div>
-                </a>
+          </li>
+
+          <li>
+            <div class="item-menu-principal">
+              <a href="servicos.html">
+                <div class="text-menu">
+                  <p>Serviços</p>
+                </div>
+              </a>
             </div>
-        </header>
+          </li>
+
+          <li>
+            <div class="item-menu-principal">
+              <a href="contato.html">
+                <div class="text-menu">
+                  <p>Contato</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="login.html">
+        <div class="menu-login text-menu">
+          Login
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- FUNDO IGUAL AO "GRADIENT" DA HOME (pra combinar com o site) -->
+  <section class="background-gradient">
+
+    <!-- SOBRE NÓS -->
+    <section class="about" id="sobre">
+      <div class="about__wrap">
+
+        <div class="about__hero">
+          <div class="about__heroText">
+
+            <h1 class="about__headline">
+              Seu próximo <span class="hl">parceiro</span><br />
+              de tecnologia,<br />
+              design e inovação.
+            </h1>
+
+            <p class="about__sub">
+              Somos um laboratório de inovação que concentra soluções em tecnologia, design e segurança,
+              unidos por uma metodologia que guia o cliente em sua jornada digital.
+            </p>
+          </div>
+
+          <figure class="about__heroMedia">
+            <img src="../IMAGENS/fotos/meeting.jpg" alt="Equipe em reunião analisando soluções" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="about__history">
+          <h2 class="about__title">Nossa história</h2>
+
+          <div class="about__historyText">
+            <p>
+              Fundada em 2010, a DDAC (Data Development, Analytics &amp; Consulting) nasceu com a missão de
+              transformar dados em inteligência estratégica para empresas que desejam crescer com segurança
+              e competitividade.
+            </p>
+
+            <p>
+              Em um cenário global marcado pela rápida expansão das Inteligências Artificiais e pela
+              aceleração
+              da transformação digital, muitas organizações passaram a enfrentar um desafio crítico:
+              a falta de estrutura, organização e governança adequada de seus dados.
+            </p>
+
+            <p>
+              A nova era tecnológica exige mais do que ferramentas avançadas: exige base sólida, processos bem
+              definidos e inteligência humana na gestão da informação.
+            </p>
+
+            <p>
+              Nosso propósito é estruturar, desenvolver e analisar dados empresariais de forma estratégica,
+              unindo tecnologia, metodologia e visão analítica para gerar decisões mais assertivas, eficientes
+              e orientadas a resultados.
+            </p>
+
+            <p>
+              Acreditamos que dados, quando bem organizados e interpretados, deixam de ser apenas registros e
+              se tornam ativos valiosos capazes de impulsionar inovação, performance e vantagem competitiva.
+            </p>
+          </div>
+
+          <div class="about__stats" aria-label="Métricas da DDAC">
+            <div class="stat">
+              <span class="stat__num">200 +</span>
+              <span class="stat__label">clientes</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat__num">50</span>
+              <span class="stat__label">Plataformas sob gestão</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat__num">25 +</span>
+              <span class="stat__label">Anos de funcionamento</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER (IGUAL AO DA HOMEPAGE) -->
+    <footer>
+      <div class="text-hq">
+        <div class="brasilhq">
+          <div class="titulo-brasilhq">
+            <h1>Brasil HQ</h1>
+          </div>
+          <div class="text-brasilhq">
+            <p>José Versolato, 111, 21 andar<br>
+              São Bernardo, SP<br>
+              contato@ddac.com.br<br>
+              +55 11 99200-4345</p>
+          </div>
+        </div>
+
+        <div class="unitedstateshq">
+          <div class="titulo-unitedstateshq">
+            <h1>United States HQ</h1>
+          </div>
+          <div class="text-unitedstateshq">
+            <p>Rose Street, 480, 3 floor<br>
+              Los Angeles, CA<br>
+              contato@ddac.com.br<br>
+              +1 213 96270-0982</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-selos-certificados">
+        <img src="../IMAGENS/logos/selos-certificados.png" width="700px">
+      </div>
+    </footer>
+
+  </section>
+
 </body>
 
 </html>
