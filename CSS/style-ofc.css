@@ -356,7 +356,7 @@ footer {
 .about__headline {
   margin: 0 0 16px;
   line-height: 1.05;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 800;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   color: white;
@@ -374,7 +374,7 @@ footer {
 .about__sub {
   margin: 0;
   max-width: 520px;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.65;
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -416,7 +416,7 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.85;
   font-family: "Space Mono", monospace;
   color: rgba(255, 255, 255, 0.88);
