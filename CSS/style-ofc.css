@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background:
     rgb(16, 53, 92);
@@ -36,16 +42,89 @@ header {
 }
 
 .menu-principal {
-  list-style: none;
-  /*remove as bolinhas*/
-  display: flex;
-  /*distribui os elementos dentro dela na horizontal*/
-  gap: 30px;
-  /*espaço entre os elementos*/
+  list-style: none; /*remove as bolinhas*/
+  display: flex; /*distribui os elementos dentro dela na horizontal*/
+  gap: 30px; /*espaço entre os elementos*/
   margin: 0;
   padding: 0;
-
 }
+
+.menu-principal .text-menu {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.menu-principal .text-menu p {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: #ffffff;
+}
+
+.menu-principal a.active::after {
+  width: 100%;
+}
+
+/* Selecione o link ou o texto dentro da sua lista */
+li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+  /* ESSENCIAL: Faz o elemento ter o tamanho exato do texto */
+}
+
+li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px; /* ou 0 */
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+/* Faz a linha crescer apenas até o limite do texto */
+li a:hover::after {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  /* Coloca os itens lado a lado */
+  list-style: none;
+  /* Remove os pontos da lista */
+  gap: 30px;
+  /* Cria o espaço entre as palavras */
+  align-items: center;
+  /* Alinha o texto com o botão de login */
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-login {
+  background-color: #01497c;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-login:hover {
+  background-color: #3498db;
+  /* O fundo preenche com a cor */
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(52, 152, 219, 0.4);
+  /* Sombra suave */
+}
+
 
 a {
   text-decoration: none;
@@ -331,10 +410,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* =========================
-   SOBRE NÓS (About) - DDAC
-========================= */
-
 .about {
   color: white;
 }
@@ -483,3 +558,150 @@ footer {
     gap: 16px;
   }
 }
+
+.heroServicos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 50px 60px 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-serCard {
+  background-color: #2a6f97;
+  border-radius: 24px;
+  padding: 40px 36px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celular-serMedia {
+  width: 280px;
+}
+
+.celular-serMedia img {
+  width: 100%;
+  display: block;
+}
+
+.hero-serText {
+  max-width: 520px;
+}
+  
+  .hero-serText h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    color: #e6f4ff;
+  }
+  
+  .hero-serText p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #c8d7f3;
+  }
+
+  
+  .services-wrapper {
+    max-width: 1100px;
+    margin: 110px auto 0;
+    padding: 0 24px 80px 8px;
+  }
+
+  .services-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e6f4ff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .services-layout {
+    position: relative;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .services-layout input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+  }
+
+  .services {
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 34px;
+    border-radius: 24px;
+    border: none;
+    background: #02213f;
+    color: #e6f4ff;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.15s ease;
+    min-width: 280px;
+  }
+
+  .service-item:hover {
+    background: #032d52;
+  }
+
+  #service-ux:checked ~ .services label[for="service-ux"],
+  #service-consultoria:checked ~ .services label[for="service-consultoria"],
+  #service-criacao:checked ~ .services label[for="service-criacao"],
+  #service-analise:checked ~ .services label[for="service-analise"],
+  #service-evolucao:checked ~ .services label[for="service-evolucao"] {
+    background: #2A6F97;
+    color: #ffffff;
+  }
+  
+  .service-content {
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+    margin-left: auto;
+    padding-left: 40px;
+  }
+
+  .service-description {
+    display: none;
+    font-family: "Space Mono", monospace;
+  }
+
+  #service-ux:checked ~ .service-content .content-ux,
+  #service-consultoria:checked ~ .service-content .content-consultoria,
+  #service-criacao:checked ~ .service-content .content-criacao,
+  #service-analise:checked ~ .service-content .content-analise,
+  #service-evolucao:checked ~ .service-content .content-evolucao {
+    display: block;
+  }
+
+  .service-description p {
+    font-family: "Space Mono", monospace;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #c8d7f3;
+    margin-bottom: 22px;
+  }
+
+  .service-description p:last-child {
+    margin-bottom: 0;
+  }

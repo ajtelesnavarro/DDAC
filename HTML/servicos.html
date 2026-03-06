@@ -1,55 +1,155 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <head>
-        <title> Serviços</title>
-        <link rel="stylesheet" href="../CSS/style.css">
-    <head>
+<head>
+    <meta charset="UTF-8">
 
-    <body>
-        <header>
-            <div class="container-logo">
-                <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
+    <title>Serviços | DDAC</title>
+
+    <link rel="stylesheet" href="../CSS/style-ofc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <a href="./homepage.html" class="container-logo">
+            <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
+        </a>
+
+        <div class="menu-direita">
+            <nav>
+                <ul class="menu-principal">
+                    <li>
+                        <div class="item-menu-principal">
+                            <a href="#" class="redirecionar_index">
+                                <div class="text-menu">
+                                    <p>Sobre Nós</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-principal">
+                            <a href="#" class="redirecionar_index">
+                                <div class="text-menu">
+                                    <p>Serviços</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-principal">
+                            <a href="#" class="redirecionar_index">
+                                <div class="text-menu">
+                                    <p>Contato</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#">
+                <div class="menu-login text-menu">
+                    Login
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="heroServicos">
+        <div class="hero-serCard">
+            <div class="celular-serMedia">
+                <img src="../IMAGENS/servicos/celular-ofc.png" alt="Mockup de celular">
             </div>
-            <div class="menu-direita">
-                <nav>
-                    <ul class="menu-principal">
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Sobre Nós</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Serviços</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-menu-principal">
-                                <a href="#" class="redirecionar_index">
-                                    <div class="text-menu">
-                                        <p>Contato</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#">
-                    <div class="menu-login text-menu">
-                        Login
-                    </div>
-                </a>
+        </div>
+
+        <section class="hero-serText">
+            <h2>Tire suas ideias do papel</h2>
+            <p>
+                A DDAC, através da análise de sistemas, elimina quaisquer problemas
+                técnicos para viabilizar o crescimento escalável e garantir a
+                assertividade das arquiteturas de software com base no estudo rigoroso
+                das especificações e objetivos da organização.
+            </p>
+        </section>
+    </main>
+
+    <!-- BLOCOS DE SERVIÇOS -->
+    <section class="services-wrapper" id="servicos">
+        <h2 class="services-title">Projetando soluções que as pessoas realmente desejam usar.</h2>
+        <div class="services-layout">
+            <input type="radio" name="service" id="service-ux" checked>
+            <input type="radio" name="service" id="service-consultoria">
+            <input type="radio" name="service" id="service-criacao">
+            <input type="radio" name="service" id="service-analise">
+            <input type="radio" name="service" id="service-evolucao">
+            <div class="services">
+                <label for="service-ux" class="service-item"><span>UX Research</span></label>
+                <label for="service-consultoria" class="service-item"><span>Consultoria</span></label>
+                <label for="service-criacao" class="service-item"><span>Criação do Sistema</span></label>
+                <label for="service-analise" class="service-item"><span>Análise de dados</span></label>
+                <label for="service-evolucao" class="service-item"><span>Evolução</span></label>
             </div>
-        </header>
-    <body>
+            <div class="service-content">
+                <div class="service-description content-ux">
+                    <p>Nosso serviço de UX Research é a base de inteligência de qualquer projeto. Realizamos um
+                        diagnóstico profundo que inclui entrevistas com stakeholders, testes de usabilidade, mapeamento
+                        de jornadas e análise de personas.</p>
+                    <p>Não trabalhamos com suposições. Investigamos as dores reais do seu público e os gargalos
+                        operacionais da sua empresa para garantir que o sistema final seja intuitivo, reduza a curva de
+                        aprendizado e maximize a satisfação do usuário final, transformando tecnologia em uma
+                        experiência fluida.</p>
+                </div>
+                <div class="service-description content-consultoria">
+                    <p>Atuamos como parceiros estratégicos para entender o momento atual da sua infraestrutura e dos
+                        seus processos. Prestamos consultoria técnica especializada para desenhar o roadmap tecnológico
+                        ideal, auxiliando na escolha de arquiteturas, linguagens e metodologias que melhor se adaptam
+                        aos seus objetivos.</p>
+                    <p>Unimos a visão de negócios à viabilidade técnica. Nossa consultoria ajuda a evitar investimentos
+                        errados, otimiza o uso de recursos e prepara sua empresa para uma transformação digital segura,
+                        estruturada e escalável.</p>
+                </div>
+                <div class="service-description content-criacao">
+                    <p>Transformamos a estratégia em realidade através do desenvolvimento de sistemas personalizados
+                        (web, mobile ou plataformas internas). Utilizamos as tecnologias mais modernas do mercado para
+                        construir arquiteturas limpas, modulares e altamente seguras.</p>
+                    <p>Focamos em sistemas que não apenas "funcionam", mas que são integrados ao ecossistema da sua
+                        empresa. Priorizamos a agilidade na entrega sem abrir mão da robustez, garantindo que o software
+                        seja uma ferramenta de produtividade e não um custo de manutenção.</p>
+                </div>
+                <div class="service-description content-analise">
+                    <p>Implementamos fluxos completos de inteligência de dados, desde a coleta e estruturação até a
+                        visualização avançada (Dashboards e BI). Trabalhamos para que sua empresa pare de apenas
+                        "acumular" dados e passe a extrair deles insights valiosos sobre comportamento, finanças e
+                        operação.</p>
+                    <p>Nossa análise é preditiva e prescritiva. Ajudamos você a identificar padrões ocultos, prever
+                        tendências de mercado e tomar decisões baseadas em evidências reais, reduzindo riscos e
+                        aumentando a precisão de cada movimento estratégico da companhia.</p>
+                </div>
+                <div class="service-description content-evolucao">
+                    <p>Entendemos que o mercado e a tecnologia mudam rápido. Por isso, oferecemos um serviço dedicado à
+                        evolução constante dos sistemas e modelos de dados já implantados. Realizamos monitoramento de
+                        performance, atualizações de segurança e implementação de novas funcionalidades conforme o seu
+                        negócio cresce.</p>
+                    <p>Não entregamos um projeto e vamos embora. Estabelecemos um ciclo de melhoria contínua onde
+                        analisamos o feedback do uso real para otimizar processos, garantindo que sua solução
+                        tecnológica evolua na mesma velocidade que a sua empresa e nunca se torne obsoleta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 
-<html>
-
+</html>
