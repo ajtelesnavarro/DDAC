@@ -2,30 +2,27 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Contato | DDAC</title>
 
-    <title>Sobre Nós | DDAC</title>
+    <link rel="stylesheet" href="../CSS/style-ofc.css">
 
-    <!-- MESMAS FONTES DA HOMEPAGE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400;700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet" />
-
-    <!-- MESMO CSS DA HOMEPAGE -->
-    <link rel="stylesheet" href="../CSS/style-ofc.css" />
+        rel="stylesheet">
 </head>
 
 <body>
     <section class="background-gradient">
+
         <header>
-            <a href="../HTML/homepage.html" class="container-logo">
+            <a href="./homepage.html" class="container-logo">
                 <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
             </a>
 
@@ -34,7 +31,7 @@
                     <ul class="menu-principal">
                         <li>
                             <div class="item-menu-principal">
-                                <a href="./sobrenospage-ofc.html">
+                                <a href="./sobrenos.html" class="redirecionar_index">
                                     <div class="text-menu">
                                         <p>Sobre Nós</p>
                                     </div>
@@ -44,7 +41,7 @@
 
                         <li>
                             <div class="item-menu-principal">
-                                <a href="./servicos.html">
+                                <a href="./servicos.html" class="redirecionar_index">
                                     <div class="text-menu">
                                         <p>Serviços</p>
                                     </div>
@@ -54,7 +51,7 @@
 
                         <li>
                             <div class="item-menu-principal">
-                                <a href="#">
+                                <a href="./contato.html" class="redirecionar_index active">
                                     <div class="text-menu">
                                         <p>Contato</p>
                                     </div>
@@ -71,6 +68,95 @@
                 </a>
             </div>
         </header>
+
+        <main class="contato-page">
+            <section class="contato-container">
+                <h1 class="contato-titulo">Tem um projeto em mente?</h1>
+
+                <form class="contato-formulario">
+                    <div class="contato-campo contato-campo-full">
+                        <label for="empresa">Nome da Empresa</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+
+                    <div class="contato-grid-2">
+                        <div class="contato-campo">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" id="cnpj" name="cnpj">
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="+00 00 00000-0000">
+                        </div>
+                    </div>
+
+                    <div class="contato-campo contato-campo-full">
+                        <label for="email">E-mail corporativo</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="contato-grid-2">
+                        <div class="contato-campo">
+                            <label for="pais">País</label>
+                            <input type="text" id="pais" name="pais">
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado">
+                        </div>
+                    </div>
+
+                    <div class="contato-campo contato-campo-full">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade">
+                    </div>
+
+                    <div class="contato-campo contato-campo-full">
+                        <label for="ideia">Conte-nos sobre sua ideia</label>
+                        <textarea id="ideia" name="ideia"></textarea>
+                    </div>
+
+                    <div class="contato-botoes">
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="text-hq">
+                <div class="brasilhq">
+                    <div class="titulo-brasilhq">
+                        <h1>Brasil HQ</h1>
+                    </div>
+                    <div class="text-brasilhq">
+                        <p>José Versolato, 111, 21 andar<br>
+                            São Bernardo, SP<br>
+                            contato@ddac.com.br<br>
+                            +55 11 99200-4345</p>
+                    </div>
+                </div>
+
+                <div class="unitedstateshq">
+                    <div class="titulo-unitedstateshq">
+                        <h1>United States HQ</h1>
+                    </div>
+                    <div class="text-unitedstateshq">
+                        <p>Rose Street, 480, 3 floor<br>
+                            Los Angeles, CA<br>
+                            contato@ddac.com.br<br>
+                            +1 213 96270-0982</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-selos-certificados">
+                <img src="../IMAGENS/logos/selos-certificados.png" width="700px">
+            </div>
+        </footer>
     </section>
 </body>
 
