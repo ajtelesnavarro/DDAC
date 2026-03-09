@@ -1047,3 +1047,59 @@ footer {
 .services-layout input{
   display:none;
 }
+
+.about__us {
+  margin-top: 80px;
+}
+
+.about__usTitle {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.about__usSub {
+  font-family: "Space Mono", monospace;
+  letter-spacing: -0.02em;
+  font-size: 25px;
+}
+
+.about__usMember-geral {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__usMember-bloco {
+  width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(180deg, #1f5f8b 0%, #1b567f 50%, #184d74 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__usMedia img{
+  width: 250px;
+  border-radius: 15px;
+}
+
+.about__usTitle-member h1{
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about__usTitle-member h2{
+  font-family: "Space Mono", monospace;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 10px;
+}
