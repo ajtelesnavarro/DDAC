@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedido | DDAC</title>
+
+    <link rel="stylesheet" href="../CSS/style-ofc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="background-gradient pedido-page">
+        <header class="pedido-header">
+            <div class="container-logo">
+                <img src="../IMAGENS/logos/DDAC-simbolo.png" style="width: 180px;">
+            </div>
+            <div class="menu-direita pedido-menu-direita">
+                <nav>
+                    <ul class="menu-principal">
+                        <li>
+                            <div class="item-menu-principal">
+                                <a href="./homepage.html">
+                                    <div class="text-menu">
+                                        <p>Início</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item-menu-principal">
+                                <a href="./pedido.html" class="active">
+                                    <div class="text-menu">
+                                        <p>Pedido</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="pedido-perfil">
+                    <div class="pedido-perfil-avatar" id="pedido-avatar-iniciais">
+                        CL
+                    </div>
+                    <div class="pedido-perfil-textos">
+                        <span class="pedido-perfil-nome" id="pedido-header-nome">nome sobrenome</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="pedido-conteudo">
+            <section class="pedido-hero">
+                <h1 class="pedido-titulo">
+                    Olá, <span id="pedido-nome-cliente">[Nome Sobrenome]</span>!
+                </h1>
+                <p class="pedido-subtitulo">
+                    Acompanhe seu Pedido <span class="pedido-numero">#134340</span>
+                </p>
+            </section>
+
+            <section class="pedido-etapas">
+                <div class="pedido-etapas-icones">
+                    <div class="pedido-icone-wrapper">
+                        <div class="pedido-icone pedido-icone-ativo">
+                            <span>✓</span>
+                        </div>
+                        <p class="pedido-icone-legenda">Recebido</p>
+                    </div>
+
+                    <div class="pedido-linha"></div>
+
+                    <div class="pedido-icone-wrapper">
+                        <div class="pedido-icone pedido-icone-ativo">
+                            <img class="pedido-icone-img" src="../IMAGENS/pedidos/lupa.png" alt="Pedido em análise">
+                        </div>
+                        <p class="pedido-icone-legenda">Em Análise</p>
+                    </div>
+
+                    <div class="pedido-linha"></div>
+
+                    <div class="pedido-icone-wrapper">
+                        <div class="pedido-icone">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                        <p class="pedido-icone-legenda">Execução</p>
+                    </div>
+
+                    <div class="pedido-linha"></div>
+
+                    <div class="pedido-icone-wrapper">
+                        <div class="pedido-icone">
+                            <img class="pedido-icone-img" src="../IMAGENS/pedidos/bandeira.png" alt="Pedido finalizado">
+                        </div>
+                        <p class="pedido-icone-legenda">Finalizado</p>
+                    </div>
+                </div>
+
+                <div class="pedido-cards">
+                    <article class="pedido-card pedido-card-ativo">
+                        <h3>Recebido</h3>
+                        <p class="pedido-card-sub">Pedido Confirmado</p>
+                        <p class="pedido-card-data">01/10/25, 10:20</p>
+                        <p class="pedido-card-texto">
+                            Seu pedido foi enviado para nosso time que responderá o mais breve possível.
+                        </p>
+                    </article>
+
+                    <article class="pedido-card pedido-card-ativo">
+                        <h3>Em Análise</h3>
+                        <p class="pedido-card-sub">Analisando Detalhes</p>
+                        <p class="pedido-card-data">01/10/25, 15:00</p>
+                        <ul class="pedido-card-lista">
+                            <li>Conferência de dados e arquivos enviados.</li>
+                            <li>Definição do responsável técnico.</li>
+                            <li>Criação do cronograma de entrega.</li>
+                        </ul>
+                    </article>
+
+                    <article class="pedido-card pedido-card-futuro">
+                        <h3>Execução</h3>
+                        <p class="pedido-card-sub">Trabalho em Andamento</p>
+                    </article>
+
+                    <article class="pedido-card pedido-card-futuro">
+                        <h3>Finalizado</h3>
+                        <p class="pedido-card-sub">Serviço Concluído</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="pedido-contato">
+                <p>Duvidas? <a href="mailto:contato@ddac.com.br">Entre em contato</a></p>
+            </section>
+        </main>
+    </section>
+
+    <script>
+        (function () {
+            var nomePadrao = "[Nome Sobrenome]";
+            var nomeArmazenado = localStorage.getItem("ddacUserName");
+            var nomeFinal = (nomeArmazenado && nomeArmazenado.trim()) ? nomeArmazenado.trim() : nomePadrao;
+
+            var spanNomeCliente = document.getElementById("pedido-nome-cliente");
+            var spanHeaderNome = document.getElementById("pedido-header-nome");
+            var avatarIniciais = document.getElementById("pedido-avatar-iniciais");
+
+            if (spanNomeCliente) {
+                spanNomeCliente.textContent = nomeFinal;
+            }
+
+            if (spanHeaderNome) {
+                spanHeaderNome.textContent = nomeFinal;
+            }
+
+            if (avatarIniciais) {
+                var iniciais = "CL";
+                if (nomeArmazenado && nomeArmazenado.trim()) {
+                    var partes = nomeArmazenado.trim().split(" ").filter(function (p) { return p.length > 0; });
+                    if (partes.length === 1) {
+                        iniciais = partes[0].charAt(0).toUpperCase();
+                    } else if (partes.length > 1) {
+                        iniciais = (partes[0].charAt(0) + partes[partes.length - 1].charAt(0)).toUpperCase();
+                    }
+                }
+                avatarIniciais.textContent = iniciais;
+            }
+        })();
+    </script>
+</body>
+
+</html>
