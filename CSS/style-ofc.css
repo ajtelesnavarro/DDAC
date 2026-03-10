@@ -368,7 +368,7 @@ footer {
 .container-cadastro-bloco p {
   font-family: "Space Mono", monospace;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 20px;
 }
 
@@ -490,7 +490,7 @@ footer {
     "text stats";
   column-gap: 56px;
   row-gap: 28px;
-  align-items: start;
+  align-items: center;
 }
 
 .about__title {
@@ -601,7 +601,7 @@ footer {
   justify-content: center;
   padding: 12px 22px;
   border-radius: 999px;
-  background: #012A4A;
+  background: #1f5f8b;
   color: #ffffff;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-weight: 700;
@@ -1050,6 +1050,7 @@ footer {
 
 .about__us {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .about__usTitle {
@@ -1065,6 +1066,7 @@ footer {
   font-family: "Space Mono", monospace;
   letter-spacing: -0.02em;
   font-size: 25px;
+  text-align: center;
 }
 
 .about__usMember-geral {
@@ -1083,6 +1085,11 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+}
+
+.s-gerente {
+  height: 880px;
 }
 
 .about__usMedia img{
@@ -1101,5 +1108,13 @@ footer {
   letter-spacing: -0.02em;
   text-align: center;
   font-style: italic;
+}
+
+.about__usTitle-member h3{
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
   margin-bottom: 10px;
 }
