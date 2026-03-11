@@ -42,9 +42,12 @@ header {
 }
 
 .menu-principal {
-  list-style: none; /*remove as bolinhas*/
-  display: flex; /*distribui os elementos dentro dela na horizontal*/
-  gap: 30px; /*espaço entre os elementos*/
+  list-style: none;
+  /*remove as bolinhas*/
+  display: flex;
+  /*distribui os elementos dentro dela na horizontal*/
+  gap: 30px;
+  /*espaço entre os elementos*/
   margin: 0;
   padding: 0;
 }
@@ -57,7 +60,7 @@ header {
 
 .menu-principal .text-menu p {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -83,7 +86,8 @@ li a::after {
   position: absolute;
   width: 0;
   height: 3px;
-  bottom: -5px; /* ou 0 */
+  bottom: -5px;
+  /* ou 0 */
   left: 0;
   background-color: #3498db;
   transition: width 0.3s ease;
@@ -387,6 +391,29 @@ footer {
   margin-top: 20px;
 }
 
+
+.botao-enviar{
+  width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #012A4A;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.25s ease;
+}
+
+.botao-enviar:hover {
+  background: #01497c;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+
 .container-cadastro-enviar {
   display: flex;
   justify-content: center;
@@ -399,12 +426,13 @@ footer {
   height: 40px;
   border: none;
   background-color: rgba(42, 111, 151, 0.4);
-  border-radius: 15px;
+  border-radius: 12px;
   font-size: 18px;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   outline: none;
   color: white;
   caret-color: white;
+  text-indent: 10px;
 }
 
 .container-cadastro-bloco input::placeholder {
@@ -635,14 +663,12 @@ footer {
 }
 
 .contato-formulario {
-   background: linear-gradient(
-    180deg,
-    #1f5f8b 0%,
-    #1b567f 50%,
-    #184d74 100%
-  );
+  background: linear-gradient(180deg,
+      #1f5f8b 0%,
+      #1b567f 50%,
+      #184d74 100%);
 
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
 
   padding: 38px 42px 34px;
@@ -721,6 +747,7 @@ footer {
   color: white;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   font-size: 20px;
+  font-weight: bolder;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -921,131 +948,131 @@ footer {
   }
 }
 
-.heroServicos{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:80px;
-  padding:80px;
-  color:white;
+.heroServicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px;
+  color: white;
 }
 
-.hero-serCard{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.hero-serCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.celular-serMedia img{
-  width:350px;
+.celular-serMedia img {
+  width: 350px;
 }
 
-.hero-serText{
-  max-width:600px;
+.hero-serText {
+  max-width: 600px;
 }
 
-.hero-serText h2{
-  font-size:60px;
-  font-family:"Zalando Sans SemiExpanded", sans-serif;
-  margin-bottom:20px;
+.hero-serText h2 {
+  font-size: 60px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  margin-bottom: 20px;
 }
 
-.hero-serText p{
-  font-size:22px;
-  font-family:"Space Mono", monospace;
-  line-height:1.6;
+.hero-serText p {
+  font-size: 22px;
+  font-family: "Space Mono", monospace;
+  line-height: 1.6;
 }
 
-.services-wrapper{
-  margin-top:100px;
-  padding:0 80px 100px;
-  color:white;
+.services-wrapper {
+  margin-top: 100px;
+  padding: 0 80px 100px;
+  color: white;
 }
 
-.services-title{
-  text-align:center;
-  font-size:45px;
-  margin-bottom:60px;
-  font-family:"Zalando Sans SemiExpanded", sans-serif;
+.services-title {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 60px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
 
-.services-layout{
-  display:flex;
-  gap:80px;
-  align-items:flex-start;
+.services-layout {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
 }
 
-.services{
-  display:flex;
-  flex-direction:column;
-  gap:25px;
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.service-item{
-  cursor:pointer;
-  font-size:26px;
-  font-family:"Zalando Sans SemiExpanded", sans-serif;
-  padding:10px 0;
-  transition:all 0.2s ease;
+.service-item {
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  padding: 10px 0;
+  transition: all 0.2s ease;
 }
 
-.service-item:hover{
-  color:#3498db;
+.service-item:hover {
+  color: #3498db;
 }
 
-.service-content{
-  max-width:600px;
+.service-content {
+  max-width: 600px;
 }
 
-.service-description{
-  font-family:"Space Mono", monospace;
-  font-size:20px;
-  line-height:1.7;
+.service-description {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
-.service-description p{
-  margin-bottom:15px;
+.service-description p {
+  margin-bottom: 15px;
 }
 
-.services-layout input[type="radio"]{
-  display:none;
+.services-layout input[type="radio"] {
+  display: none;
 }
 
-.services-layout{
+.services-layout {
   display: flex;
   gap: 80px;
   align-items: flex-start;
 
   max-width: 1200px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-.service-description{
+.service-description {
   display: none;
 }
 
-#service-ux:checked ~ .service-content .content-ux{
-  display:block;
+#service-ux:checked~.service-content .content-ux {
+  display: block;
 }
 
-#service-consultoria:checked ~ .service-content .content-consultoria{
-  display:block;
+#service-consultoria:checked~.service-content .content-consultoria {
+  display: block;
 }
 
-#service-criacao:checked ~ .service-content .content-criacao{
-  display:block;
+#service-criacao:checked~.service-content .content-criacao {
+  display: block;
 }
 
-#service-analise:checked ~ .service-content .content-analise{
-  display:block;
+#service-analise:checked~.service-content .content-analise {
+  display: block;
 }
 
-#service-evolucao:checked ~ .service-content .content-evolucao{
-  display:block;
+#service-evolucao:checked~.service-content .content-evolucao {
+  display: block;
 }
 
-.services-layout input{
-  display:none;
+.services-layout input {
+  display: none;
 }
 
 .about__us {
@@ -1092,25 +1119,25 @@ footer {
   height: 880px;
 }
 
-.about__usMedia img{
+.about__usMedia img {
   width: 250px;
   border-radius: 15px;
 }
 
-.about__usTitle-member h1{
+.about__usTitle-member h1 {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   text-align: center;
   margin-top: 10px;
 }
 
-.about__usTitle-member h2{
+.about__usTitle-member h2 {
   font-family: "Space Mono", monospace;
   letter-spacing: -0.02em;
   text-align: center;
   font-style: italic;
 }
 
-.about__usTitle-member h3{
+.about__usTitle-member h3 {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
   letter-spacing: -0.02em;
   text-align: center;
@@ -1305,9 +1332,11 @@ footer {
 }
 
 .pedido-contato {
-  margin-top: 32px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
 
 .pedido-contato a {
@@ -1340,4 +1369,30 @@ footer {
   .pedido-conteudo {
     padding-inline: 8px;
   }
+}
+
+.sac-titulo {
+  text-align: center;
+  color: white;
+  font-family: "Zalando Sans Semiexpanded", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.sac-subtitulo {
+  text-align: center;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.sac-contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 50px;
 }
